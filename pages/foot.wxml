@@ -1,0 +1,6 @@
+<!--pages/foot.wxml-->
+<view class='footers' bindtap="call">
+    <image  src="/img/logo.png" class="imgs" />
+    <view>贝肯伟技术支持</view>
+    <view>电话：029-84498995</view>
+</view>

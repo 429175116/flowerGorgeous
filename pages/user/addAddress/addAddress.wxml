@@ -1,0 +1,23 @@
+<!--pages/addAddress/addAddress.wxml-->
+<view id="edit" class="address_new" style="transform: translate(0px, 0px); padding-bottom: 10px;">
+    <form  bindsubmit='addressSetUp'>
+        <view>
+            <text class="tit">收货人</text>
+            <input name="userName" type="text" value="{{listData.userName}}" placeholder="姓名" />
+        </view>
+        <view class="text_flex">
+            <text class="tit">联系方式</text>
+            <input name="phone" value="{{listData.phone}}" type="tel" placeholder="手机号码"/>
+        </view>
+        <view class="street_detail" id="adinfoP">
+            <text class="tit">详细地址</text>
+            <input placeholder="输入收货地址" name="address" value="{{listData.address}}" rows="2"/>
+        </view>
+        <view class="mod_btns">
+            <button class="mod_btn bg_1" formType="submit">确认</button>
+        </view>
+        <view class="mod_btns">
+            <view bindtap="inputReset" class="mod_btn bg_">重置</view>
+        </view>
+    </form>
+</view>

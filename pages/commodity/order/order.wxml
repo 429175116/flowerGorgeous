@@ -1,0 +1,70 @@
+<!--viewages/order/order.wxml-->
+<view class='pageTitle'>订单</view>
+
+<view class="address_defalut_wraview" id="toviewFixedview" style="height: 91viewx;">
+    <view id="addressDefault" class="address_defalut address_border" style="disviewlay: block;">
+        <view>
+            <text>
+                收货人姓名：{{address.name}}
+            </text>
+            <text>
+                收货人电话：{{address.phone}}
+            </text>
+            <text>
+                收货地址：{{address.address}}
+            </text>
+            <navigator url="../../user/addressList/addressList" class="address">选择地址</navigator>
+        </view>
+    </view>
+</view>
+
+<view>
+    <view is_abled="0" ven_ind="0" pro_ind="0" class="hproduct noclick">
+        <image class="photo" src="{{imgUrlData}}{{commodity.banner}}" />
+        <view class="fn">
+            <text>{{commodity.title}}</text>
+        </view>
+        <view class="sku_price">¥
+            <text>{{commodity.price}}</text>
+        </view>
+        <view class="sku">
+            <view id="modifyNumDom" class="num_wrap" style="display: none;">
+                <text class="minus" num_tag="minus"></text>
+                <input class="num" num_tag="input" type="tel" value="1" />
+                <text class="plus" num_tag="plus"></text>
+            </view>
+            <view class="sku_num" style="margin-right:20px">×1</view>
+        </view>
+        <view class="buy_additional" id="proArea" style="display:none;"> </view>
+    </view>
+</view>
+
+<view>
+    <view class="shipping">
+        <text class="order_info_guarantee_title">配送服务</text>
+        <view class="shipping_content" ship_venderid="0">
+            <view class="type_justify">
+                <view class="left">中小件送货时间</view>工作日、双休日与节假日均可送货</view>
+        </view>
+    </view>
+</view>
+<view id="jdCartTab" style="">
+    <view class="content">
+        <text class="title">礼品卡</text>
+        <text>无可用</text>
+    </view>
+</view>
+<view class="buy_chart">
+    <view class="buy_chart_item">
+        <view class="buy_chart_item_text">商品金额</view>
+        <view class="buy_chart_item_price" style="margin-right:10px">¥{{commodity.price}}</view>
+    </view>
+</view>
+
+<view class="price">总价：
+    <text id="pageTotalPrice" price="163.89" style="margin-right:20px">￥{{commodity.price}}</text>
+</view>
+
+<view id="btnPayOnLine">
+    <button class="mod_btn bg_2" bindtap='placeOrder'>支付</button>
+</view>

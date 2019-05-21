@@ -1,0 +1,205 @@
+/* pages/commodity/commodity.wxss */
+
+.swiper {
+    width: 100%;
+    height: 500rpx;
+}
+
+.swiper image {
+    width: 100%;
+    height: 500rpx;
+}
+
+.detail_decoration.bg_pink {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background: no-repeat, -webkit-linear-gradient(top, #66C45C, #91E589);
+    background: no-repeat, linear-gradient(180deg, #66C45C, #91E589);
+    background-size: 259px, 100%;
+}
+
+.detail_decoration {
+    position: relative;
+    z-index: 5;
+}
+
+.detail_decoration .price {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.buy_area .forenotice_info_price, .buy_area .kan_bar .price,
+.buy_area .plus_bar .price, .buy_area .power_bar, .buy_area .power_bar .price,
+.buy_area .price_wrap .description, .buy_area .price_wrap .old_price,
+.buy_area .sams_bar .price, .de_pm_list .price,
+.detail_car_install .detail_car_install_right,
+.detail_cmd .grid_item .buy_wrap .price, .detail_cmd .row_item .buy_wrap .price,
+.detail_decoration .msg .old_price, .detail_decoration .msg .tips,
+.detail_decoration .price, .detail_deliver_serve.detail_row .deliver_list .money,
+.detail_sku_v1 .service .item .price,
+.detail_sku_v1_main .service .item .type .price, .hot_list .item .price {
+    font-family: arial;
+}
+
+.num, .price, .price_old {
+    font-family: arial, sans-serif;
+}
+
+.detail_decoration .price {
+    font-size: 20px;
+}
+
+.detail_decoration .msg {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    font-size: 12px;
+}
+
+.detail_decoration .msg .logo {
+    position: relative;
+    display: inline-block;
+    margin: -2px 3px 0 0;
+    padding: 0 3px 0 18px;
+    height: 15px;
+    vertical-align: middle;
+    line-height: 15px;
+    font-size: 10px;
+}
+
+.detail_decoration .countdown {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 116px;
+    height: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.detail_decoration .countdown .countdown_text {
+    margin: 5px 0 2px;
+    font-size: 10px;
+    color: #666;
+}
+
+.detail_decoration .countdown .countdown_nums {
+    font-size: 14px;
+    color: #FFAEC9;
+}
+
+.buy_area {
+    overflow: hidden;
+    background: #fff;
+}
+
+.buy_area .fn_wrap {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.buy_area .fn_wrap, .shop_info_wrap {
+    padding: 15px 10px;
+    overflow: hidden;
+}
+
+.shopping_name {
+    width: 60%;
+    font-size: 14px;
+    line-height: 20px;
+    float: left;
+}
+
+.pay {
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    background: #e4393c;
+    color: #fff;
+    float: right;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.right_shorter {
+    clear: both;
+}
+
+.buy_area .fn_wrap .fn.fn_goods_name {
+    min-height: 36px;
+    padding-right: 52px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.buy_area .fn_wrap .fn {
+    position: relative;
+    color: #333;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.mod_tag.mod_tag_big {
+    height: 15px;
+}
+
+.mod_tag image {
+    display: block;
+    height: 100%;
+}
+
+image {
+    border: 0 none;
+    vertical-align: top;
+    margin-bottom: 5px;
+}
+
+.mod_tag {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+    height: 14px;
+}
+
+.fn_wrap .desc {
+    color: #e4393c;
+    padding: 5px 0 0;
+    line-height: 1.3;
+    position: relative;
+    font-size: 12px;
+    max-height: 46px;
+    overflow: hidden;
+    margin-top:10px; 
+}
+
+.buy_area .art_desc, .buy_area .book_desc {
+    font-size: 12px;
+    padding: 5px 0 0;
+}
+
+.commodityInfo {
+    width: 100%;
+    height: auto;
+}
+
+.commodityInfo image {
+    width: 100%;
+    height: 300rpx;
+}

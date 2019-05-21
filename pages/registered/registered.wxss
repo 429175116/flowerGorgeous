@@ -1,0 +1,42 @@
+/* pages/registered/registered.wxss */
+.account_card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin: 12px 10px;
+    font-size: 14px;
+}
+.account_card_profile {
+    margin-top: -2px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.account_card_profile image {
+    display: block;
+    width: 100%;
+    border-radius: 100%;
+}
+
+image {
+    border: 0 none;
+    vertical-align: top;
+}
+.account_card_info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.account_card_name {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.account_card_level, .account_card_phone {
+    margin-top: 3px;
+    color: #999;
+}

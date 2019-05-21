@@ -1,0 +1,118 @@
+<!-- 团队管理 -->
+<!--pages/manage/manage.wxml-->
+<view class="account_card">
+
+    <view class="account_card_info">
+        <p class="account_card_name">
+            <text class="account_card_name_text">{{name}}</text>
+        </p>
+        <p class="account_card_level" id="">
+            {{levelName}}
+        </p>
+    </view>
+    <view class="account_card_profile">
+        <image src="{{avatar}}" />
+    </view>
+</view>
+<!-- <view class="bs-callout bs-callout-info" id="callout-tabs-extends-component" style='display:{{hidden}}'>
+    <text class="title"></text>
+    <text>系统保证金不足500，会影响您的正常订货,请及时充值！</text>
+</view> -->
+<view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top performance" bindtap='goPerformance'>
+        <view class="uk-thumbnail-name">
+            销售业绩
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top balance" bindtap='goBalance'>
+        <view class="uk-thumbnail-name">
+            余额
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top orderManage" bindtap='goAllOrder'>
+        <view class="uk-thumbnail-name">
+            订单管理
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top orderReview" bindtap='goStayOrder'>
+        <view class="uk-thumbnail-name">
+            待审核订单({{orderListLength}})
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top myProxy" bindtap='goMyProxy'>
+        <view class="uk-thumbnail-name">
+            我的代理
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top applyProxy" bindtap='goConfirmProxy'>
+        <view class="uk-thumbnail-name">
+            待确认代理({{confirmAgentdLength}})
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <button class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top service" open-type="contact" session-from="weapp">
+        <view class="uk-thumbnail-name">
+            微信客服
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view class="button serviceButton">联系客服</view>
+        </view>
+    </button>
+</view>
+<!-- <include src="/pages/foot.wxml" /> -->
+<!-- 底部导航部分 -->
+<view class="footer">
+    <view class="ft_item on">
+        <view bindtap="goIndex">
+            <image src="/img/ll.png"></image>
+            <text>在线订货</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goManage">
+            <image src="/img/sq_off.png"></image>
+            <text>团队管理</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goUser">
+            <image src="/img/wode_off.png"></image>
+            <text>个人中心</text>
+        </view>
+    </view>
+</view>

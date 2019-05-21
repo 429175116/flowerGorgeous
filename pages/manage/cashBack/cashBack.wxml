@@ -1,0 +1,19 @@
+<!--pages/manage/cashBack/cashBack.wxml-->
+<!-- 返现明细 -->
+<view class='pageTitle'>返现明细</view>
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">事件</view>
+        <view class="th-2">金额</view>
+        <view class="th-3">操作</view>
+    </view>
+    <view class="tr bg-g">
+        <view class="td-1">test</view>
+        <view class="td-2">500000</view>
+        <view class="td-3">
+            <button type="button" class="btn btn-info">详情</button>
+        </view>
+    </view>
+</view>
+
+

@@ -1,0 +1,4 @@
+<!-- 若不是扫码进入小程序，则显示此页面，提示其寻找上级代理索要二维码 -->
+<!--pages/registered/prompt/prompt.wxml-->
+<view class='pageTitle'>未扫描二维码不可进入</view>
+<view class='pageTitle'>请向上级分销商索要二维码</view>

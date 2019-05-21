@@ -1,0 +1,39 @@
+/* pages/pay/pay.wxss */
+.pageTitle {
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+    color: #fff;
+    background-color: #74c26c;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.all{
+  margin: 0 10px
+}
+.title{
+  font-size: 14px;
+  color:#333;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px #eee solid;
+}
+.pay_left{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.pay_right{
+  position: absolute;
+  right:0;
+  margin-right: 10px;
+}
+.mod_btn {
+  margin-top: 30px;
+  background: #74c26c;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+}

@@ -1,0 +1,18 @@
+<!--pages/user/bill/bill.wxml-->
+<!-- 可用余额 -->
+<view class='pageTitle'>账单明细</view>
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">事件</view>
+        <view class="th-2">金额</view>
+    </view>
+    <block wx:for="{{listData}}" wx:for-item="name" wx:for-index="{{code}}">
+        <view class="tr bg-g">
+            <view class="td-1">{{name.event}}</view>
+            <view class="td-2">
+                <span>￥</span>
+                {{name.money}}
+            </view>
+        </view>
+    </block>
+</view>

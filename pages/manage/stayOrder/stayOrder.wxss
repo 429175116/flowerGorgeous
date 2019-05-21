@@ -1,0 +1,154 @@
+/* pages/myOrder/myOrder.wxss */
+.pageTitle{
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+    color: #fff;
+    background-color: #74c26c;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.all{
+  padding: 0 10px;
+}
+.order{
+  border-bottom: 1px #eee solid;
+  padding-bottom: 10px;
+}
+.order_box_hd {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #333;
+} 
+.order_box_hd_label {
+    color: #999;
+}
+.order_box_hd_time {
+    float: right;
+    padding: 0 0 0 17px;
+    font-size: 12px;
+    color: #999;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAABGdBT…wmkDEVoAmoNE1al9KWqh2ancJoEaEMp7G9xS4Pkk7l9FR/pAIeA91XVgMAAAAASUVORK5CYII=) no-repeat left 16px;
+    background-size: 12px;
+}
+.order_head {
+    position: relative;
+    min-height: 60px;
+}
+.oh_content {
+    display: block;
+    padding: 10px 0;
+    position: relative;
+}
+.order_head view {
+    line-height: 1.7em;
+    font-size: 12px;
+    color: #999;
+}
+
+.co_red {
+    color: #e4393c;
+}
+.order_head .oh_btn {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    display: block;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+    z-index: 1;
+    border-radius: 2px;
+    background: #e4393c;
+}
+.order_shopBar {
+    display: block;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    padding-left: 25px;
+}
+.order_shopBar text {
+    display: block;
+    position: relative;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: normal;
+}
+.order_shopBar + .order_item {
+    margin-top: 0;
+}
+
+.order_item {
+    position: relative;
+    margin-top: 10px;
+}
+.order_item .oi_content {
+    overflow: hidden;
+}
+
+.order_item .oi_button, .order_item .oi_content {
+    display: block;
+}
+.order_item .image {
+    position: relative;
+    display: block;
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 10px;
+}
+image {
+    border: 0 none;
+    vertical-align: top;
+}
+.order_item .oi_content a > div {
+    margin-top: 3px;
+}
+.count{
+    float: right;
+}
+.wx_ending {
+    text-align: center;
+    line-height: 18px;
+    margin: 30px 0 50px 0;
+    font-size: 12px; 
+}
+
+.order_head .oh_btnpay {
+    position: absolute;
+    top: 17px;
+    right: 160px;
+    display: block;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+    z-index: 1;
+    border-radius: 2px;
+    background: #e4393c;
+}
+.order_head .oh_btnExamines {
+    position: absolute;
+    top: 17px;
+    right: 80px;
+    display: block;
+    width: 75px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    line-height: 25px;
+    z-index: 1;
+    border-radius: 2px;
+    background: #e4393c;
+}

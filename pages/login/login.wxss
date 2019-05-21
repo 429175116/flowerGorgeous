@@ -1,0 +1,20 @@
+/* pages/login/login.wxss */
+page, .mod_btns{
+    padding: 0rpx;
+    margin: 0px; 
+}
+.mod_btns{
+    display: flex;
+    justify-content:center;  
+}
+.mod_btn{
+    background-color: #f0c;
+}
+.img{
+    margin:50px 10% 0 10%;
+    width: 80%;
+    height: 200px;
+}
+.footers {
+    margin-top: 110px;
+}

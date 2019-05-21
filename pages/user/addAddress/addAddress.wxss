@@ -1,0 +1,154 @@
+/* pages/addAddress/addAddress.wxss */
+.pageTitle{
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+    color: #fff;
+    background-color: #74c26c;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.address_new {
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    background: #fff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.address_new view {
+    padding: 12px 10px 12px 75px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.address_new .tit {
+    width: 65px;
+    line-height: 1;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #999;
+}
+
+.address_new input {
+    height: 20px;
+    line-height: normal;
+    border: 0 none;
+    font-size: 14px;
+    width: 100%;
+    -webkit-appearance: none;
+    vertical-align: top;
+    color: #333;
+}
+
+button, h1, h2, h3, h4, h5, h6, input, select {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+.address_new view {
+    padding: 12px 10px 12px 75px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.address_new .label_flex input {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.address_new view.street_detail {
+    position: relative;
+    padding-right: 35px;
+}
+.address_new view {
+    padding: 12px 10px 12px 75px;
+    position: relative;
+    box-sizing: border-box;
+}
+.address_new p.address_tags .address_tags_tag.cur {
+    color: #6a77b6;
+}
+
+.address_new p.address_tags .address_tags_tag {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 5px 10px 5px 0;
+    padding: 0 10px;
+    height: 25px;
+    max-width: 150px;
+    vertical-align: top;
+    line-height: 25px;
+    font-size: 14px;
+    color: #999;
+    background-color: #fff;
+}
+.mod_btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    margin: 15px 10px;
+}
+
+.mod_btns .mod_btn.bg_1 {
+    background: #3884ff;
+    color: #fff;
+}
+.mod_btns .mod_btn.bg_ {
+    border-color: #ddd;
+    color: #333;
+}
+.mod_btns .mod_btn {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    min-width: 0;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    position: relative;
+}
+.mod_btns .mod_btn, .mod_btns .mod_btn.bg_4 {
+    border-color: #ddd;
+    color: #333;
+}
+
+.mod_btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    margin: 15px 10px;
+    padding: 20rpx 50rpx 20rpx 50rpx !important;
+
+}
+.mod_btns .mod_btn {
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.mod_btns .mod_btn, .mod_btns .mod_btn.bg_4 {
+    border-color: #ddd;
+    color: #333;
+}
+.mod_btns .mod_btn {
+    background: #f3f3f3;
+    color: #fff;
+    padding:0rpx;
+
+}

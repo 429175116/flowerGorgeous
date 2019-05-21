@@ -1,0 +1,15 @@
+<!-- 销售业绩 -->
+<!--pages/manage/performance/performance.wxml-->
+<view class='pageTitle'>团队业绩明细</view>
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">来源代理</view>
+        <view class="th-2">业绩金额</view>
+    </view>
+    <block wx:for="{{listData}}" wx:for-item="name" wx:for-index="{{code}}">
+        <view class="tr bg-g">
+            <view class="td-1">{{name.username}}</view>
+            <view class="td-2">{{name.total}}</view>
+        </view>
+    </block>
+</view>

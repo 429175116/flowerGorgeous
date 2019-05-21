@@ -1,0 +1,14 @@
+<!--pages/manage/myProxy/myProxy.wxml-->
+<!-- 我的代理 -->
+<view class='pageTitle'>我的代理</view>
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">昵称</view>
+        <view class="th-2">级别</view>
+    </view>
+    <view class="tr bg-g" wx:for="{{list}}" wx:for-item="code">
+        <view class="td-1">{{code.username}}</view>
+        <view class="td-2">{{code.name}}</view>
+    </view>
+    <!-- </block> -->
+</view>

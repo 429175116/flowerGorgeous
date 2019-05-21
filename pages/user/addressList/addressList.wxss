@@ -1,0 +1,81 @@
+/* pages/user/addressList/addressList.wxss */
+
+.address_list {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.address_list .address {
+    position: relative;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom:30px;
+
+}
+
+.address_list ul {
+    padding-right: 50px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.address_list ul {
+    padding: 7px 40px;
+    /* position: relative;
+    overflow: hidden; */
+}
+
+.address_list .tag {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 0 5px;
+    vertical-align: middle;
+    margin: -2px 5px 0 0;
+    max-width: 8em;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    color: #4b9bfb;
+}
+
+.address_list .edit {
+    color: transparent;
+    width: 50px;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+    right: 0;
+    z-index: 2;
+}
+
+.address_list view {
+    margin-top: 4px;
+}
+
+
+
+.address_list .act {
+    background-color: #ff3b2f;
+    color: #fff;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    float: right;
+}
+.phone{
+    float:right;
+}
+.address_list .del {
+    height: 16px;
+    line-height: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 70px;
+    margin-top: -8px;
+}

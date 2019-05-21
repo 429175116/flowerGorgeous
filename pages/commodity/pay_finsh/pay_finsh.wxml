@@ -1,0 +1,6 @@
+<!--pages/pay_finsh/pay_finsh.wxml-->
+<view class='pageTitle'>支付成功</view>
+<view class="pay_finsh">
+  <image src="../../../img/pay_finsh.png" class="img" />
+  <view class="finsh">支付成功</view>
+</view>

@@ -1,0 +1,20 @@
+<view class="footer">
+    <view class="ft_item on">
+        <navigator url="/pages/index">
+            <image src="/img/ll.png"></image>
+            <text>在线订货</text>
+        </navigator>
+    </view>
+    <view class="ft_item">
+        <navigator url="/pages/manage/manage">
+            <image src="/img/sq_off.png"></image>
+            <text>团队管理</text>
+        </navigator>
+    </view>
+    <view class="ft_item">
+        <navigator url="/pages/user/user">
+            <image src="/img/wode_off.png"></image>
+            <text>个人中心</text>
+        </navigator>
+    </view>
+</view>

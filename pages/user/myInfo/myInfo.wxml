@@ -1,0 +1,29 @@
+<!--pages/user/myInfo/myInfo.wxml-->
+<view class='pageTitle'>我的信息</view>
+<view id="edit" class="address_new">
+    <form bindsubmit='onTabsItemTap'>
+        <view>
+            <text class="tit">姓名</text>
+            <input name="username" type="text" value="{{listData.username}}" placeholder="输入姓名" />
+        </view>
+        <view>
+            <text class="tit">身份证</text>
+            <input name="idcode" type="text" value="{{listData.idcode}}" placeholder="输入身份证号码" />
+        </view>
+        <view>
+            <text class="tit">微信号</text>
+            <input name="weicode" type="text" value="{{listData.weicode}}" placeholder="输入微信号" />
+        </view>
+        <view>
+            <text class="tit">手机号</text>
+            <input name="phone" type="text" value="{{listData.phone}}" placeholder="输入手机号" />
+        </view>
+        <view>
+            <text class="tit">代理级别</text>
+            <input name="name" type="text" value="{{listData.name}}"  disabled="disabled" />
+        </view>
+        <view class="mod_btns">
+            <button class="mod_btn bg_1" formType="submit">修改信息</button>
+        </view>
+    </form>
+</view>

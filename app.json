@@ -1,0 +1,38 @@
+{
+    "extEnable": true,
+    "pages": [
+        "pages/index",
+        "pages/login/login",
+        "pages/user/user",
+        "pages/user/myOrder/myOrder",
+        "pages/user/myInfo/myInfo",
+        "pages/user/warrantInfo/warrantInfo",
+        "pages/user/bill/bill",
+        "pages/user/share/share",
+        "pages/user/transfer/transfer",
+        "pages/user/addressList/addressList",
+        "pages/user/addAddress/addAddress",
+        "pages/manage/manage",
+        "pages/manage/allOrder/allOrder",
+        "pages/manage/stayOrder/stayOrder",
+        "pages/manage/performance/performance",
+        "pages/manage/balance/balance",
+        "pages/manage/myProxy/myProxy",
+        "pages/manage/cashBack/cashBack",
+        "pages/manage/confirmProxy/confirmProxy",
+        "pages/manage/withdraw/withdraw",
+        "pages/commodity/order/order",
+        "pages/commodity/pay/pay",
+        "pages/commodity/pay_finsh/pay_finsh",
+        "pages/commodity/commodity",
+        "pages/registered/registered",
+        "pages/registered/prompt/prompt",
+        "pages/nav/nav"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#74c26c",
+        "navigationBarTitleText": "植花丽妍",
+        "navigationBarTextStyle": "white"
+    }
+}

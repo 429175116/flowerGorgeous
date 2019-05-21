@@ -1,0 +1,26 @@
+<!--pages/user/addressList/addressList.wxml-->
+<view class='address_list'>
+    <block wx:for="{{listData}}" wx:for-item="name">
+        <view class="address">
+        <navigator url="../../commodity/order/order?address_id={{name.id}}&id={{id}}">
+            <view class="noChoose">
+                <view>
+                    <strong>{{name.name}}</strong>
+                    <strong class="phone">{{name.phone}}</strong>
+                </view>
+                <view>
+                    <span class="tag">公司</span>
+                    {{name.address}}
+                </view>
+            </view>
+            </navigator>
+            <strong class="act" bindtap="delAddress" data-id="{{name.id}}">删除</strong>
+        </view>
+    </block>
+</view>
+
+
+
+<view class='mod_btns'>
+    <navigator class='mod_btn bg_1' url="/pages/user/addAddress/addAddress" id='submitAddress'>新增地址</navigator>
+</view>

@@ -1,0 +1,15 @@
+/* pages/user/myInfo/myInfo.wxss */
+.pageTitle {
+    width: 100%;
+    height: 100rpx;
+    align-items: center;
+    justify-content: center;
+    font-size: 40rpx;
+    color: #fff;
+    background-color: #74c26c;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.address_new{
+    margin-left: 10px;
+}

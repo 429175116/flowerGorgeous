@@ -1,0 +1,54 @@
+<!--注册商户-->
+<!-- <view class="account_card">
+    <view class="account_card_profile">
+        <image src="//img11.360buyimg.com/jdphoto/s50x50_jfs/t1291/121/695557320/451/826741e1/559cd82bN8edc6bc0.png" />
+    </view>
+    <view class="account_card_info">
+        <p class="account_card_name">
+            <text class="account_card_name_text">TestName</text>
+        </p>
+        <p class="account_card_level" id="">
+            代理级别
+            <text>5级</text>
+        </p>
+    </view>
+</view> -->
+
+
+<view id="edit" class="address_new" style="transform: translate(0px, 0px); padding-bottom: 10px;">
+    
+    <form bindsubmit='onTabsItemTap'>
+        <view>
+            <text class="tit">姓名</text>
+            <input id="name" type="text" value="{{userName}}" name="userName" placeholder="请输入姓名" />
+        </view>
+        <view class="text_flex">
+            <text class="tit">联系方式</text>
+            <input value="{{userTel}}" type="tel" name="userTel" placeholder="手机号码" maxlength="11" />
+        </view>
+        <view>
+            <text class="tit">微信号</text>
+            <input type="text" value="{{userWxId}}" name="userWxId" placeholder="请输微信号" />
+        </view>
+        <view>
+            <text class="tit">证件号</text>
+            <input type="text" value="{{userLicenseNumber}}" name="userLicenseNumber" placeholder="请输入身份证号码" />
+        </view>
+        <view class="street_detail" id="adinfoP">
+            <text class="tit">详细地址</text>
+            <input placeholder="详细地址需填写楼栋楼层或房间号信息" name="userAddress" value="{{userAddress}}" rows="2" />
+        </view>
+        <view class="mod_btns" style="display:{{show}}">
+            <button class="mod_btn bg_1"  open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">请授权</button>
+        </view>
+        <view class="mod_btns">
+            <button class="mod_btn bg_1" formType="submit">提交</button>
+        </view>
+        <view class="mod_btns">
+            <view class="mod_btn bg_" bindtap="reset" id="delAddress">清空</view>
+        </view>
+    </form>
+
+</view>
+<!-- 底部导航部分 -->
+<include src="/pages/nav.wxml" />

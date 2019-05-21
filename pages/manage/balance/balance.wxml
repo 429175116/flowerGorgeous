@@ -1,0 +1,37 @@
+<!--pages/manage/balance/balance.wxml-->
+<!-- 可用余额 -->
+<view class='pageTitle'>充值</view>
+<!-- 金额列表 -->
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">金额种类</view>
+        <view class="th-2">金额</view>
+    </view>
+    <view class="tr bg-g">
+        <view class="td-1">金额</view>
+        <view class="td-2">{{list.money}}</view>
+    </view>
+    <view class="tr bg-g">
+        <view class="td-1">返现</view>
+        <view class="td-2">{{list.balance}}</view>
+    </view>
+</view>
+<!-- 提现 -->
+<view id="edit" class="address_new" style="transform: translate(0px, 0px); padding-bottom: 10px;">
+    <form>
+        <view>
+            <text class="tit">充值</text>
+            <input id="name" type="text" value="{{price}}" placeholder="输入充值金额" bindinput='moneyInput' />
+        </view>
+
+        <view class="mod_btns">
+            <view class="mod_btn bg_1" id="submitAddress" bindtap='recharge'>充值</view>
+        </view>
+        <!-- <view class="mod_btns">
+            <view class="mod_btn bg_1" id="submitAddress" bindtap='putForward'>提现</view>
+        </view> -->
+        <view class="mod_btns">
+            <view class="mod_btn bg_" id="delAddress" bindtap='clearMoney'>重置</view>
+        </view>
+    </form>
+</view>

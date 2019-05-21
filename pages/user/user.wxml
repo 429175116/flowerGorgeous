@@ -1,0 +1,107 @@
+<!--pages/user/user.wxml-->
+<view class="account_card">
+    
+    <view class="account_card_info">
+        <p class="account_card_name">
+            <text class="account_card_name_text">{{name}}</text>
+        </p>
+        <p class="account_card_level">
+            {{levelName}}
+        </p>
+    </view>
+    <view class="account_card_profile">
+        <image src="{{avatar}}" />
+    </view>
+</view>
+<view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top myInfo" bindtap='goMyInfo'>
+        <view class="uk-thumbnail-name">
+            我的信息
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top shareQP" bindtap='goShar'>
+        <view class="uk-thumbnail-name">
+            分享二维码
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top billInfo" bindtap='goBill'>
+        <view class="uk-thumbnail-name">
+            账单明细
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top myAddress" bindtap='goAddressList'>
+        <view class="uk-thumbnail-name">
+            我的地址
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top myOrder" bindtap='goMyOrder'>
+        <view class="uk-thumbnail-name">
+            我的订单
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+    <view class="uk-thumbnail uk-thumbnail-mini uk-margin-small-top warrantInfo" bindtap='goWarrantInfo'>
+        <view class="uk-thumbnail-name">
+            我的授权信息
+        </view>
+        <view class="uk-thumbnail-caption">
+            <view>
+                <text class="button">查看</text>
+                <image src="/img/pk_jt.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<!-- 底部导航部分 -->
+<view class="footer">
+    <view class="ft_item on">
+        <view bindtap="goIndex">
+            <image src="/img/ll.png"></image>
+            <text>在线订货</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goManage">
+            <image src="/img/sq_off.png"></image>
+            <text>团队管理</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goUser">
+            <image src="/img/wode_off.png"></image>
+            <text>个人中心</text>
+        </view>
+    </view>
+</view>
+<!-- <include src="/pages/foot.wxml" /> -->

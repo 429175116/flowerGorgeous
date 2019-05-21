@@ -1,0 +1,8 @@
+<!--pages/login/login.wxml-->
+<view>
+    <image src="../../img/login.png" class='img' />
+</view>
+<view class='mod_btns'>
+    <button open-type="getUserInfo" class='mod_btn bg_1 ' lang="zh_CN" bindgetuserinfo="onGotUserInfo">点击登录</button>
+</view>
+<!-- <include src="/pages/foot.wxml" /> -->

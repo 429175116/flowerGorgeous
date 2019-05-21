@@ -1,0 +1,35 @@
+<!--pages/pay/pay.wxml-->
+<view class='pageTitle'>支付</view>
+<view class='all'>
+  <view class='title'>
+    <text class="pay_left">订单序号</text>
+    <text class="pay_right">{{pay.number}}</text>
+  </view>
+  <view class='title'>
+    <text class="pay_left">商品名称</text>
+    <text class="pay_right">{{commodity.title}}</text>
+  </view>
+  <view class='title'>
+    <text class="pay_left">商品单价</text>
+    <text class="pay_right">￥{{commodity.price}}</text>
+  </view>
+  <view class='title'>
+    <text class="pay_left">商品数量</text>
+    <text class="pay_right">1</text>
+  </view>
+  <view class='title'>
+    <text class="pay_left">账户余额</text>
+    <text class="pay_right">￥{{money.money}}</text>
+  </view>
+  <view class='title'>
+    <text class="pay_left">返现余额</text>
+    <text class="pay_right">￥{{money.balance}}</text>
+  </view>
+  <view class='title'>
+    <text class="pay_left">支付总额</text>
+    <text class="pay_right">￥{{pay.total}}</text>
+  </view>
+  <button class="mod_btn" bindtap='goToPay'  wx:if="{{pay.agent_id==1}}">微信付款</button>
+  <button class="mod_btn" bindtap='goToPayFinsh' wx:if="{{pay.agent_id!=1}}">余额付款</button>
+  
+</view>

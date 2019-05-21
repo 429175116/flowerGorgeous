@@ -1,0 +1,35 @@
+<!--pages/user/transfer/transfer.wxml-->
+<view class='pageTitle'>上级转账</view>
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">金额种类</view>
+        <view class="th-2">金额</view>
+    </view>
+    <view class="tr bg-g">
+        <view class="td-1">余额</view>
+        <view class="td-2">{{listData.balance}}</view>
+    </view>
+    <view class="tr bg-g">
+        <view class="td-1">返现</view>
+        <view class="td-2">{{listData.mreturnoney}}</view>
+    </view>
+</view>
+
+
+
+<view id="edit" class="address_new" style="transform: translate(0px, 0px); padding-bottom: 10px;">
+    <form bindsubmit='transferUpdata'>
+        <view>
+            <text class="tit">转账</text>
+            <input name="transferAmount" type="text" value="{{transferAmount}}" placeholder="输入提现金额" />
+        </view>
+        
+        <view class="mod_btns">
+            <button class="mod_btn bg_1"  formType="submit">转账</button>
+        </view>
+        <view class="mod_btns">
+            <view class="mod_btn bg_" bindtap="inputReset" id="delAddress">重置</view>
+        </view>
+    </form>
+</view>
+

@@ -1,0 +1,21 @@
+<!--pages/nav/nav.wxml-->
+<view class="footer">
+    <view class="ft_item on">
+        <view bindtap="goIndex">
+            <image src="/img/ll.png"></image>
+            <text>在线订货</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goManage">
+            <image src="/img/sq_off.png"></image>
+            <text>团队管理</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goUser">
+            <image src="/img/wode_off.png"></image>
+            <text>个人中心</text>
+        </view>
+    </view>
+</view>

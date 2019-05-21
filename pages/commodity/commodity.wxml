@@ -1,0 +1,32 @@
+<!--pages/commodity/commodity.wxml-->
+<!--index.wxml-->
+<view class='pageContent'>
+    <swiper class="swiper" interval="5000" duration="1000">
+        <block>
+            <swiper-item>
+                <image src="{{imgUrlData}}{{datas.banner}}" class="slide-image" mode="scaleToFill" />
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="detail_decoration bg_pink" id="priceSpec">
+        <view class="price" id="specPrice">
+            ¥{{datas.price}}
+        </view>
+    </view>
+    <!--  -->
+    <view class='buy_area'>
+        <view class="fn_wrap">
+            <view>
+                <view class="shopping_name">{{datas.title}}
+                </view>
+                <view class="shopping_name">{{datas.des}}
+                </view>
+                <view class="pay" bindtap='pay' data-id="{{datas.id}}">购买</view>
+            </view>
+            <view class="J_ping desc right_shorter" id="itemDesc" ptag="7001.1.59">本店为官方直营店，全店直发支持7天无理由赠运费险</view>
+        </view>
+    </view>
+    <view class='commodityInfo'>
+        <image src="{{imgUrlData}}{{datas.content}}" style="width:{{autoW}}px;height:{{autoH}}px" bindload='autoImage' class="slide-image" mode="aspectFill" />
+    </view>
+</view>

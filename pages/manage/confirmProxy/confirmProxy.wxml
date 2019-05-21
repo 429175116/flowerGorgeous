@@ -1,0 +1,24 @@
+<!--pages/manage/confirmProxy/confirmProxy.wxml-->
+<!-- 确认代理 -->
+<view class='pageTitle'>确认代理</view>
+<view class="table">
+    <view class="tr bg-w">
+        <view class="th ">昵称</view>
+        <view class="th-2">级别</view>
+        <view class="th-3">操作</view>
+    </view>
+    <view class="tr bg-g" wx:for="{{list}}" wx:for-item="code">
+        <view class="td-1">{{code.username}}</view>
+        <view class="td-2">{{code.name}}</view>
+        <view class="td-3">
+            <button type="button" class="btn btn-info" bindtap='toExamine' data-id="{{code.id}}">通过</button>
+             <button type="button" class="btn btn-info" bindtap='toExamines' data-id="{{code.id}}">不通过</button>
+        </view>
+        <modal hidden="{{hiddenmodalput}}" confirm-text="通过" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+            <text>您要通过{{code.name}}为您的下级吗？</text>
+        </modal>
+        <modal hidden="{{hiddenmodalputs}}" confirms-text="不通过" cancels-text="取消" bindcancel="cancels" bindconfirm="confirms">
+            <text>您要通过{{code.name}}为您的下级吗？</text>
+        </modal>
+    </view>
+</view>

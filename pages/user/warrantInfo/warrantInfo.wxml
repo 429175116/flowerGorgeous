@@ -1,0 +1,12 @@
+<!--pages/user/warrantInfo/warrantInfo.wxml-->
+<view class='pageTitle'>授权信息</view>
+<view>
+    <view class="tit">
+        <text>用户名：</text>
+        <text>{{listData.username}}</text>
+    </view>
+    <view class="tit">
+        <text>代理名：</text>
+        <text>{{listData.name}}</text>
+    </view>
+</view>

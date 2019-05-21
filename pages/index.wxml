@@ -1,0 +1,57 @@
+<view class='mod_btns'  style="display:{{show}}">
+    <button open-type="getUserInfo" class='mod_btn bg_1 ' lang="zh_CN" bindgetuserinfo="onGotUserInfo">小程序授权</button>
+</view>
+<view class="main">
+    <view bindtap="more" wx:if="{{datas!=''&&more==1}}" class="more">查看更多</view>
+    <view wx:if="{{datas!=''&&more==0}}" class="nomore">没有数据了</view>
+    <view class="kongbai search_prolist cols_2 type_onetitle">
+        <view wx:for="{{datas}}" wx:for-item="list"  class="search_prolist_item">
+            <!-- <navigator bindtap="goIndex" id="{{list.id}}" url="commodity/commodity?id={{list.id}}" > -->
+                <view  bindtap="goCommodity" class="search_prolist_item_inner J_ping" data-id="{{list.id}}">
+                    <view class="search_prolist_cover" rd="0-4-4">
+                        <image class="photo" src="{{imgUrlData}}{{list.banner}}"></image>
+                    </view>
+                    <view class="search_prolist_info" rd="0-4-4">
+                        <view class="search_prolist_title" data-line="2" rd="0-4-4">{{list.title}}</view>
+                        <view class="search_prolist_price" rd="0-4-4" id="price_10414287031">
+                            <text rd="0-4-4">
+                            <text id="dp_J_10414287031" rd="0-4-4">¥ {{list.price}}
+                            </text>
+                            </text>
+                        </view>
+                        <view class="search_prolist_line" rd="0-4-4" id="nprice_10414287031" can-fill="1"></view>
+                        <view class="search_prolist_other text_small" rd="0-4-4" id="comtag_10414287031">
+                            <text class="search_prolist_comment">{{list.des}}</text>
+                        </view>
+                        <view class="search_prolist_other text_small hide" rd="0-4-4" id="bomtag_10414287031"></view>
+                        <!-- <view class="search_prolist_ad">广告</view> -->
+                    </view>
+                </view>
+            <!-- </navigator> -->
+        </view>
+    </view>
+</view>
+
+<!-- <include src="/pages/foot.wxml" /> -->
+<!-- 底部导航部分 -->
+<!-- <include src="/pages/nav/nav.wxml" /> -->
+<view class="footer">
+    <view class="ft_item on">
+        <view bindtap="goIndex">
+            <image src="/img/ll.png"></image>
+            <text>在线订货</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goManage">
+            <image src="/img/sq_off.png"></image>
+            <text>团队管理</text>
+        </view>
+    </view>
+    <view class="ft_item">
+        <view bindtap="goUser">
+            <image src="/img/wode_off.png"></image>
+            <text>个人中心</text>
+        </view>
+    </view>
+</view>

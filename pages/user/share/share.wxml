@@ -1,0 +1,25 @@
+<!--pages/user/share/share.wxml-->
+<view class='pageTitle'>分享二维码，新增代理</view>
+<view class="account_card">
+    <view class="account_card_info">
+        <p class="account_card_name">
+            <text class="account_card_name_text"> 点击图片放大，长按可分享 </text>
+        </p>
+        <p class="account_card_level" id="">
+            {{userInfo.name}}
+        </p>
+        <picker class="account_card_level" bindchange="levelSelect" value="{{levelData[index].id}}" range="{{levelData}}"  range-key="name">
+            <view class="picker">
+            选择生成代理级别：{{levelData[index].name}}
+            </view>
+        </picker>
+    </view>
+    <view class="account_card_profile">
+        <image src="{{userInfo.img}}" />
+    </view>
+</view>
+<button class="btn" type="default" bindtap="produceQRCode" style="display:{{show}}">生成二维码</button>
+<!-- <button class="btn" type="default" bindtap="saveImgToPhotosAlbumTap" style="display:{{downloadFile}}">保存到相册</button> -->
+<view class='imgContent'>
+    <image src='{{shareQRCode}}'  bindtap="shareQRCodeImg"  id='shareQRCodeImg' class="img" />
+</view>

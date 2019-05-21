@@ -1,0 +1,56 @@
+<!--pages/myOrder/myOrder.wxml-->
+<view class='pageTitle'>订单管理</view>
+<view class="all">
+    <view class="order" wx:for="{{orderList}}" wx:for-item="list">
+        <view class="order_box_hd" page="1">
+            <text class="order_box_hd_label">订单号：</text>{{list.number}}
+        </view>
+        <view class="order_head">
+            <view class="oh_content">
+                <view class="pState">
+                    <text>状 态：</text>
+                    <text class="co_red">{{status}}</text>
+                </view>
+                <view>
+                    <text>总 价：</text>
+                    <text class="co_red">￥{{list.total}}</text>
+                </view>
+                <view>
+                    <text>代理者：</text>
+                    <text class="co_red">{{list.username}}</text>
+                </view>
+                <view>
+                    <text>返 现：</text>
+                    <text class="co_red">{{list.differ}}元</text>
+                </view>
+                <view>
+                    <text>订单时间：</text>
+                    <text class="co_red">{{list.create_time}}</text>
+                </view>
+            </view>
+            <view class="oh_btn toPay" payprice="129800" commoditytype="0">
+                <button wx:if="{{list.is_delete==2}}" bindtap='toExamine' data-id="{{list.pro}}" class="button">审核</button>
+                <text wx:if="{{list.is_delete==1}}">通过</text>
+                <text wx:if="{{list.is_delete==0}}">不通过</text>
+            </view>
+        </view>
+        <view class="order_item" itemsku="12575326962">
+            <view class="oi_content">
+                <view>
+                    <image class="image" src="{{imgUrl}}{{list.pro_item.banner}}" />
+                </view>
+                <view ordertype="22">
+                    <view>
+                        <text class="skuTitle">{{list.pro_item.title}}</text>
+                    </view>
+                    <view>
+                        <text class="count">{{list.num}}件</text>
+                        <text class="price">{{list.pro_item.price}}</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="wx_ending">已经没有更多订单了</view>

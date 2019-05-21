@@ -1,0 +1,152 @@
+/* pages/user/user.wxss */
+page{
+    height: 100%;
+    padding-bottom:300rpx; 
+}
+.account_card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #74c26c;
+    padding:12px 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.account_card_profile {
+    margin-top: -2px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.account_card_name_text{
+    color: #fff;
+}
+.account_card_profile image {
+    display: block;
+    width: 100%;
+    border-radius: 100%;
+}
+.account_card_info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.account_card_name {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+.account_card_level, .account_card_phone {
+    margin-top: 3px;
+    color: #fff;
+}
+.bs-callout {
+    padding: 10px;
+    margin: 10px 0;
+    border-left-width: 5px;
+    border-radius: 3px;
+    font-size:10px;
+    color: #333;
+}
+
+.uk-margin-small-top {
+    margin-top: 5px !important;
+}
+.title{
+     float: left;
+     background-color: #fff;
+     width: 5px;
+     height: 14px;
+     margin-left: 10px;
+}
+.uk-thumbnail-mini {
+    width: 40%;
+    margin: 20rpx 5%;
+}
+
+.uk-thumbnail {
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 4px;
+    font-size:14px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.uk-thumbnail-name {
+    text-align: center;
+    height: 130rpx;
+    line-height: 120rpx;
+}
+
+.uk-thumbnail-caption {
+    
+    opacity: 0.3;
+    background-color: #333;
+}
+.button{
+    font-size: 12px;
+    display: inline-block;
+    max-width: 100%;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    height: 40rpx;
+    line-height: 40rpx;
+    padding: 8px 30%;
+}
+.uk-thumbnail image {
+    width: 50rpx;
+    height: 40rpx;
+}
+
+image {
+    max-width: 100%;
+   
+    box-sizing: border-box;
+    border: 0;
+}
+
+audio, canvas, iframe, image, svg, video {
+    vertical-align: middle;
+}
+/* 我的信息 */
+
+.myInfo {
+    background-color: #39c;
+}
+
+/*分享二维码*/
+
+.shareQP {
+    background-color: rgb(35, 120, 226);
+}
+
+/* 账单明细 */
+
+.billInfo {
+    background-color: rgb(74, 161, 248);
+}      
+
+/* 我的地址 */
+
+.myAddress {
+    background-color: rgb(116, 194, 108);
+}
+
+/* 我的订单 */
+
+.myOrder {
+    background-color: rgb(131, 30, 210);
+}
+
+/* 授权信息 */
+
+.warrantInfo {
+    background-color: rgb(28, 94, 178);
+}
+
